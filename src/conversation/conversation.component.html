@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		{{ contact ? contact.name : 'Please Select Someone' }}
+	</div>
+	<div #messagesHolder class="panel-body">
+		<div class="message" *ngFor="let message of messages"
+			[ngClass]="{'sent': message.sender._id == loginService.getUser()._id,
+						'received': message.receiver._id == loginService.getUser()._id}">
+			<img src="/src/assets/user.png" class="avatar">
+			<div class="sender">{{message.sender.name}}</div>
+			<div class="content">
+				{{message.content}}
+			</div>
+		</div>
+	</div>
+	<message-composer [contact]="contact" (messageAdded)="messageAdded($event)"></message-composer>
+</div>

@@ -1,0 +1,7 @@
+<ul class="list-group">
+	<li class="list-group-item" *ngFor="let user of users" (click)="selectContact(user)">
+		<img src="/src/assets/user.png" class="avatar">
+		{{ user.name }}
+		<div class="clearfix"></div>
+	</li>
+</ul>

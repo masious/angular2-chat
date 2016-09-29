@@ -1,0 +1,9 @@
+{
+	"globalDependencies": {
+		"core-js": "registry:dt/core-js#0.0.0+20160725163759",
+		"node": "registry:dt/node#6.0.0+20160909174046"
+	},
+	"dependencies": {
+		"node-localstorage": "registry:npm/node-localstorage#1.3.0+20160817182320"
+	}
+}
