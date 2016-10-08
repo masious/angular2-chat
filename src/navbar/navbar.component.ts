@@ -10,7 +10,7 @@ import { LoginService } from '../services/login.service';
 
 @Component({
 	selector: 'navbar',
-	templateUrl: 'src/navbar/navbar.component.html'
+	template: require('./navbar.component.html')
 })
 export class NavbarComponent implements OnInit{
 
